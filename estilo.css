@@ -1,5 +1,5 @@
 body {
-    background-image: url(imagenes/Fondos2.png);
+    background-image: url(imagenes/fondos2.jpg);
     background-size: cover;
 
 }
@@ -124,10 +124,10 @@ p {
 
 
 
-
-#containerspotify {
-    margin-top: 30px;
-    display: flex;
+.mirow{
+    padding: 25px;
+    margin: 0 !important;
+    display:flex;
     justify-content: center;
 }
 
@@ -282,9 +282,7 @@ footer {
 @media only screen and (max-width:667px) {
 
 
-    .container {
-        position: sticky;
-    }
+    
 
     .nave {
         display:none;
@@ -352,11 +350,7 @@ footer {
         font-size: 86%;
     }
 
-    #containerspotify {
-        position: relative;
-        left: 45px;
-        bottom: 0px;
-    }
+  
 
     .micarousel {
         position: relative;
@@ -364,7 +358,10 @@ footer {
         width: 100%;
     }
 
-
+    .mirow{
+        display: flex;
+        justify-content: center;
+    }
 
     /* GALERIA */
 
@@ -455,9 +452,7 @@ footer {
         font-size: 150%;
     }
 
-    #containerspotify {
-        margin: 50px;
-    }
+    
 
     /* GALERÍA */
     .gsubtitulo {
