@@ -321,8 +321,8 @@ footer {
 
     .video1 iframe {
 
-        width: 360px !important;
-
+        height: 377px;
+        width: 96%;
     }
 
 
@@ -356,6 +356,13 @@ footer {
         position: relative;
         top: 10px;
         width: 100%;
+    }
+
+    .carousel-item{
+        height: 377px;
+        width: 96%;
+        position: relative;
+        left: 10px;
     }
 
     .mirow{
