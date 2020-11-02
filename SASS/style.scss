@@ -1,0 +1,408 @@
+@import '_color';
+@import '_backgroundimg';
+@import '_fonts';
+@import '_mixins';
+
+
+
+body {
+    background-image:url(../imagenes/fondos2.jpg) ;
+    background-size: $backgroundsize;
+    
+  }
+  
+  .nave {
+    height: 38px;
+    animation-name: kawaii;
+    animation-duration: 5s;
+    position: relative;
+  }
+  
+  @keyframes kawaii {
+    0% {
+      left: 0px;
+    }
+  
+    50% {
+      left: 450px;
+    }
+  
+    100% {
+      left: 0px;
+    }
+  }
+  
+  .logo {
+    height: 40px;
+  }
+
+  
+  .navbar-collapse {
+    position: relative;
+    left: 20%;
+  }
+  
+  .navbar {
+    background-color: $navbar-color;
+    .navbar-nav {
+      margin: 0 auto;
+      .nav-item a {
+        color: $secondary-color !important;
+        font-weight: bolder;
+        font-family: $font-subtitulo;
+    
+        &:hover {
+          color:$main-color !important;
+          text-decoration: underline;
+        }
+      }
+    }
+  
+   
+  }
+  
+  /* INDEX */
+  
+  .titulo {
+    font-size: $font-size-titulo;
+    @include textcenter;
+    color: $main-color;
+    font-family: $font-titulo;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .subtitulo {
+    @include textcenter;
+    color: $secondary-color;
+    font-family: $font-subtitulo;
+    font-size: $font-size-subtitulo;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  
+  p {
+    @include textcenter;
+    color: #6f74dd;
+    font-family: $font-subtitulo;
+  }
+  
+  .video1 {
+    @include flexcenter;
+    padding-bottom: 120px;
+  }
+  
+  /* DISCOGRAFÍA.HTML */
+  
+  .tdiscografia {
+    font-size:$font-size-titulo;
+    @include textcenter;
+    color: $main-color;
+    font-family: $font-titulo;
+    padding: 15px;
+    padding-top: 50px;
+    margin-top: 10px;
+  }
+  
+  .carousel-inner .carousel-item {
+   @include flexcenter;
+  }
+  
+  .mirow {
+    padding: 25px;
+    margin: 0 !important;
+    @include flexcenter;
+  }
+  
+  /* GALERIA */
+  
+  .gtitulo {
+    font-size: $font-size-titulo;
+    @include textcenter;
+    color: $main-color;
+    font-family: $font-titulo;
+    padding-top: 50px;
+    margin-top: 10px;
+  }
+  
+  .gsubtitulo {
+    @include textcenter;
+    color: $secondary-color;
+    font-family: $font-subtitulo;
+    font-size: $font-size-subtitulo;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  
+  .galeria {
+    img {
+      width: 100%;
+      height: 250px;
+      cursor: pointer;
+      border: round;
+    }
+  
+    .col-lg-4 {
+      padding: 25px;
+      margin: 0 !important;
+    }
+  }
+  
+  .squad:hover {
+    border: 5px solid;
+    box-shadow: 0 15px 10px #167b64;
+  }
+  
+  /* CONTACTO */
+  
+  #contact-form {
+    margin: 17px !important;
+    padding: 72px;
+  }
+  
+  .fcontacto {
+    color: $secondary-color;
+    font-family: $font-subtitulo;
+    text-transform: capitalize;
+  }
+  
+  .btn {
+    background-color: cornflowerblue;
+  }
+  
+  /* INTEGRANTES */
+  
+  .ititulo {
+    font-size: $font-size-titulo;    
+    @include textcenter;
+    color: $main-color;
+    font-family: $font-titulo;
+    padding-top: 50px;
+    margin-top: 20px;
+  }
+  
+  .isubtitulo {
+    @include textcenter;
+    color: $secondary-color;
+    font-family: $font-subtitulo;
+    font-size: $font-size-subtitulo;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 32px;
+  }
+  
+  .sesión {
+    width: 50%;
+    position: relative;
+    left: 24%;
+    @include flexcenter;
+  }
+  
+  .somos {
+    font-family: $font-subtitulo;
+    text-transform: capitalize;
+    text-indent: 20px;
+    color: $secondary-color;
+    margin: 20px;
+    @include textcenter;
+  }
+  
+  /* CONTACTO */
+  
+  .ctitulo {
+    font-size: $font-size-titulo;
+    @include textcenter;
+    color: $main-color;
+    font-family:$font-titulo;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .csubtitulo {
+    @include textcenter;
+    color:$secondary-color;
+    font-family: $font-subtitulo;
+    font-size: $font-size-subtitulo;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 12px;
+  }
+  
+  .social {
+    @include flexspacearound;
+    padding: 20px;
+  }
+  
+  footer {
+    color: $footer-color;
+    text-align-last: left;
+    position: relative;
+    bottom: 0;
+  }
+  
+  /* Medias Query */
+  
+  /* Mobile */
+  @media only screen and (max-width: 736px) {
+    .nave {
+      display: none;
+    }
+  
+    .minavbar {
+      position: relative;
+      left: 6px;
+      top: 8px;
+    }
+  
+    .navbar-toggler {
+      background-color: $secondary-color;
+      position: relative;
+      left: 10px;
+    }
+  
+    .titulo {
+      font-size: $font-size-titulo-mobile;
+    }
+  
+    .subtitulo {
+      font-size: 95%;
+      @include textcenter;
+    }
+  
+    .video1 iframe {
+      height: 377px;
+      width: 96%;
+    }
+  
+    .social {
+      margin-bottom: 5px;
+    }
+  
+    footer {
+      color: $footer-color;
+      text-align-last: left;
+      position: relative;
+      top: 93px;
+    }
+  
+    /* Discografía */
+  
+    .tdiscografia {
+      font-size: $font-size-titulo-mobile;
+    }
+  
+    .micarousel {
+      position: relative;
+      top: 10px;
+      width: 100%;
+    }
+  
+    .videocarousel {
+      width: 100%;
+      height: 309px;
+    }
+  
+    .mirow {
+      @include flexcenter;
+    }
+  
+    /* GALERIA */
+  
+    .gtitulo {
+      font-size: $font-size-titulo-mobile;
+    }
+  
+    .gsubtitulo {
+      font-size: 49%;
+      @include textcenter;
+      margin: 20px;
+    }
+  
+    .squad {
+      width: 100%;
+    }
+  
+    /* INTEGRANTES */
+  
+    .ititulo {
+      font-size: 130%;
+    }
+  
+    .isubtitulo {
+      font-size: 75%;
+     @include textcenter;
+    }
+  
+    .imagenintegrantes {
+      width: 581px;
+      position: relative;
+      right: 86px;
+      top: 42px;
+    }
+  
+    .somos {
+      margin: 22px 140px 13px 124px;
+      background-color: cornflowerblue;
+    }
+  
+    /* CONTACTO */
+  
+    .ctitulo {
+      font-size: $font-size-titulo-mobile;
+      margin-top: 120px;
+    }
+  
+    .csubtitulo {
+      font-size: 95%;
+      @include textcenter;
+    }
+  
+    #contact-form {
+      padding-top: 10px;
+    }
+  }
+  
+  /* Tablet */
+  
+  @media only screen and (min-width: 737px) and (max-width: 1024px) {
+    .nave {
+      display: none;
+    }
+  
+    .ititulo {
+      font-size: 136%;
+      padding-top: 58px;
+    }
+  
+    .isubtitulo {
+      width: 100%;
+    }
+  
+    .navbar-toggler {
+      background-color: $secondary-color;
+    }
+  
+    /* DISCOGRAFÍA */
+  
+    .tdiscografia {
+      font-size: 150%;
+    }
+  
+    /* GALERÍA */
+  
+    .gsubtitulo {
+      margin: 20px;
+    }
+  
+    /* CONTACTO */
+  
+    .ctitulo {
+      font-size: 129%;
+    }
+  
+    .csubtitulo {
+      font-size: 85%;
+      @include textcenter
+    }
+  }
