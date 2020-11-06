@@ -15,7 +15,7 @@ body {
     height: 38px;
     animation-name: kawaii;
     animation-duration: 5s;
-    position: relative;
+  
   }
   
   @keyframes kawaii {
@@ -32,9 +32,7 @@ body {
     }
   }
   
-  .logo {
-    height: 40px;
-  }
+  
 
   
   .navbar-collapse {
@@ -46,21 +44,23 @@ body {
     background-color: $navbar-color;
     .navbar-nav {
       margin: 0 auto;
-      .nav-item a {
-        color: $secondary-color !important;
-        font-weight: bolder;
-        font-family: $font-subtitulo;
+       a {
+         color: $secondary-color !important;
+         font-weight: bolder;
+         font-family: $font-subtitulo;
+         text-transform:uppercase;
     
-        &:hover {
-          color:$main-color !important;
+         &:hover {
+          color:$main-color !important ;
           text-decoration: underline;
         }
-      }
+       }
+      
     }
   
-   
   }
   
+
   /* INDEX */
   
   .titulo {
@@ -249,16 +249,11 @@ body {
       display: none;
     }
   
-    .minavbar {
-      position: relative;
-      left: 6px;
-      top: 8px;
-    }
+  
   
     .navbar-toggler {
       background-color: $secondary-color;
-      position: relative;
-      left: 10px;
+      
     }
   
     .titulo {
@@ -266,7 +261,9 @@ body {
     }
   
     .subtitulo {
-      font-size: 95%;
+      font-size: 67%;
+
+      margin: 0px 33px;
       @include textcenter;
     }
   
@@ -369,6 +366,10 @@ body {
     .nave {
       display: none;
     }
+    .navbar-collapse{
+      position:relative;
+      left: 15%;
+    }
   
     .ititulo {
       font-size: 136%;
@@ -406,3 +407,4 @@ body {
       @include textcenter
     }
   }
+ 
