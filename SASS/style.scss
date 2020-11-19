@@ -11,30 +11,6 @@ body {
     
   }
   
-  .nave {
-    height: 38px;
-    animation-name: kawaii;
-    animation-duration: 5s;
-  
-  }
-  
-  @keyframes kawaii {
-    0% {
-      left: 0px;
-    }
-  
-    50% {
-      left: 450px;
-    }
-  
-    100% {
-      left: 0px;
-    }
-  }
-  
-  
-
-  
   .navbar-collapse {
     position: relative;
     left: 20%;
