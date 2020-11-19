@@ -44,14 +44,43 @@ body {
 }
 
 /* INDEX */
+#Inicio {
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.gifcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.gif {
+  width: 100%;
+  height: 100%;
+}
+
+.tituloprincipal {
+  z-index: 2;
+}
+
 .titulo {
-  font-size: 37px;
+  font-size: 50px;
+  letter-spacing: 12px;
   text-align: center;
   color: seagreen;
-  font-family: "Orbitron", sans-serif;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
 }
 
 .subtitulo {
@@ -60,19 +89,7 @@ body {
   font-family: "Source Code Pro", monospace;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 15px;
-}
-
-p {
-  text-align: center;
-  color: #6f74dd;
-  font-family: "Source Code Pro", monospace;
-}
-
-.video1 {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 120px;
+  margin-top: 40px;
 }
 
 /* DISCOGRAFÍA.HTML */
@@ -80,10 +97,11 @@ p {
   font-size: 37px;
   text-align: center;
   color: seagreen;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Oswald", sans-serif;
   padding: 15px;
-  padding-top: 50px;
+  padding-top: 8px;
   margin-top: 10px;
+  letter-spacing: 5px;
 }
 
 .carousel-inner .carousel-item {
@@ -98,14 +116,19 @@ p {
   justify-content: center;
 }
 
+.wow .fadeInUpBig {
+  visibility: visible;
+  animation-name: fadeInUpBig;
+}
+
 /* GALERIA */
 .gtitulo {
   font-size: 37px;
   text-align: center;
   color: seagreen;
-  font-family: "Orbitron", sans-serif;
-  padding-top: 50px;
-  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
+  padding-top: 20px;
+  letter-spacing: 5px;
 }
 
 .gsubtitulo {
@@ -114,7 +137,7 @@ p {
   font-family: "Source Code Pro", monospace;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding-top: 8px;
 }
 
 .galeria img {
@@ -136,7 +159,6 @@ p {
 /* CONTACTO */
 #contact-form {
   margin: 17px !important;
-  padding: 72px;
 }
 
 .fcontacto {
@@ -154,9 +176,9 @@ p {
   font-size: 37px;
   text-align: center;
   color: seagreen;
-  font-family: "Orbitron", sans-serif;
-  padding-top: 50px;
-  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  padding-top: 20px;
+  letter-spacing: 5px;
 }
 
 .isubtitulo {
@@ -165,8 +187,7 @@ p {
   font-family: "Source Code Pro", monospace;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 15px;
-  padding-top: 32px;
+  padding-top: 8px;
 }
 
 .sesión {
@@ -191,9 +212,9 @@ p {
   font-size: 37px;
   text-align: center;
   color: seagreen;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Oswald", sans-serif;
   padding: 15px;
-  margin-top: 20px;
+  letter-spacing: 5px;
 }
 
 .csubtitulo {
@@ -335,7 +356,11 @@ footer {
     display: none;
   }
 
-  
+  .navbar-collapse {
+    position: relative;
+    left: 15%;
+  }
+
   .ititulo {
     font-size: 136%;
     padding-top: 58px;

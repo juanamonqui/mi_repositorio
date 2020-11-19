@@ -63,14 +63,43 @@ body {
 
   /* INDEX */
   
+ #Inicio{
+  height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+ }
+
+ .gifcontainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+ }
+ .gif{
+   width:100%;
+   height:100%;
+ }
+.tituloprincipal{
+    z-index: 2;
+  }
+
+
   .titulo {
-    font-size: $font-size-titulo;
+    font-size: 50px;
+    letter-spacing: 12px;
     @include textcenter;
     color: $main-color;
     font-family: $font-titulo;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-top: 10px;
+  
   }
   
   .subtitulo {
@@ -79,19 +108,12 @@ body {
     font-family: $font-subtitulo;
     font-size: $font-size-subtitulo;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    margin-top:40px;
   }
   
-  p {
-    @include textcenter;
-    color: #6f74dd;
-    font-family: $font-subtitulo;
-  }
+ 
   
-  .video1 {
-    @include flexcenter;
-    padding-bottom: 120px;
-  }
+  
   
   /* DISCOGRAFÍA.HTML */
   
@@ -101,8 +123,9 @@ body {
     color: $main-color;
     font-family: $font-titulo;
     padding: 15px;
-    padding-top: 50px;
+    padding-top: 8px;
     margin-top: 10px;
+    letter-spacing:5px;
   }
   
   .carousel-inner .carousel-item {
@@ -114,6 +137,10 @@ body {
     margin: 0 !important;
     @include flexcenter;
   }
+  .wow .fadeInUpBig{
+    visibility: visible;
+    animation-name: fadeInUpBig;
+  }
   
   /* GALERIA */
   
@@ -122,8 +149,8 @@ body {
     @include textcenter;
     color: $main-color;
     font-family: $font-titulo;
-    padding-top: 50px;
-    margin-top: 10px;
+    padding-top: 20px;
+   letter-spacing: 5px;
   }
   
   .gsubtitulo {
@@ -132,7 +159,7 @@ body {
     font-family: $font-subtitulo;
     font-size: $font-size-subtitulo;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    padding-top: 8px;
   }
   
   .galeria {
@@ -178,8 +205,8 @@ body {
     @include textcenter;
     color: $main-color;
     font-family: $font-titulo;
-    padding-top: 50px;
-    margin-top: 20px;
+    padding-top: 20px;
+   letter-spacing: 5px;
   }
   
   .isubtitulo {
@@ -188,8 +215,7 @@ body {
     font-family: $font-subtitulo;
     font-size: $font-size-subtitulo;
     text-transform: uppercase;
-    padding-bottom: 15px;
-    padding-top: 32px;
+    padding-top: 8px;
   }
   
   .sesión {

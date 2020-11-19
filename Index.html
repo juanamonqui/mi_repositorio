@@ -16,6 +16,7 @@
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/animate.css">
 </head>
 
 
@@ -32,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active " href="Inicio">Inicio </a>
+                <a class="nav-item nav-link active " href="#Inicio">Inicio </a>
                 <a class="nav-item nav-link active" href="#Discografía">Discografía</a>
                 <a class="nav-item nav-link active" href="#Galería">Galería</a>
                 <a class="nav-item nav-link active" href="#Integrantes">Integrantes</a>
@@ -42,33 +43,22 @@
           </nav>
     </header>
 
-  
+    
 
-    <section id="inicio">
-        <div class="text-center pt-5">
-            <h1 class="titulo">
+    <section id="Inicio">
+    
+        <div class="gifcontainer">
+            <img  class="gif" src="imagenes/gif/escuadrón_plush_combativo_-_disciplina_(600mg)_-_en_vivo.gif" alt="">
+        </div>
+
+            <div class="tituloprincipal">
+                <h1 class="titulo text-center pt-5">
                 ESCUADRON PLUSH COMBATIVO
                 <h4 class="subtitulo"> Componiendo la música de películas de ciencia ficción que no existen.</h4>
-            </h1>
-        </div>
-
-
-
-        <p> "MOTORES" // "4127" </p>
-
-        <!-- Video Principal -->
-        <div class="video1">
-
-            <iframe width="72%" height="505" src="https://www.youtube.com/embed/PA_b_tV9u2Y" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-        </div>
-
-
-
-
-
+                </h1>
+            </div>
+      
+        
     </section>
 
 
@@ -106,6 +96,12 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
+                    <div class="carousel-item">
+                        <iframe width="72%" height="505" src="https://www.youtube.com/embed/PA_b_tV9u2Y" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+        
+                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -127,7 +123,7 @@
         <!-- Spotify -->
 
         <div class="container" id="containerspotify">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center wow fadeInUpBig" >
                 <div class="col-md-6 col-lg-6 col-sm-12 mirow"> <iframe
                         src="https://open.spotify.com/embed/album/2IOWCamSAYEh71HVge2UP4" width="300" height="380"
                         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
@@ -314,7 +310,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-
+     <script src="js/wow.min.js"></script>
+     <script>
+     new WOW().init();
+     </script>
 </body>
 
 </html>
